@@ -1,0 +1,38 @@
+{
+  "data": {
+    "seed": 42,
+    "img_size": 512,
+    "val_frac": 0.15,
+    "primary_scheme": "hospital",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "train": {
+    "seed": 42,
+    "batch_size": 4,
+    "max_epochs": 50,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "sched_factor": 0.5,
+    "sched_patience": 5,
+    "min_lr": 1e-06,
+    "early_stop_patience": 12,
+    "min_delta": 0.0001,
+    "threshold": 0.5,
+    "num_workers": 2,
+    "use_pretrained_encoder": true
+  },
+  "evaluation": {
+    "threshold": 0.5,
+    "mode": "original",
+    "enforce_containment": true
+  }
+}

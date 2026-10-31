@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Dataset, generated metadata, and local experiment outputs
+data/
+outputs/
+checkpoints/
+*.csv
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.gz
+
+# Notebook/runtime files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
